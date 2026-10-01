@@ -9,6 +9,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     basic.pause(100)
     pins.digitalWritePin(DigitalPin.P0, 1)
     basic.pause(100)
+    pins.digitalWritePin(DigitalPin.P0, 0)
 })
 input.onButtonPressed(Button.A, function () {
     radio.sendNumber(3)
